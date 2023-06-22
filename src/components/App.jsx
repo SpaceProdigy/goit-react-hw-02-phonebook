@@ -1,25 +1,10 @@
 import { Component } from 'react';
-import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 import css from './Contacts.module.css';
 import { ContactForm } from './ContactForm/ContactForm ';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
 export class App extends Component {
-  static propTypes = {
-    contacts: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        name: PropTypes.string.isRequired,
-        number: PropTypes.string.isRequired,
-      })
-    ).isRequired,
-    filter: PropTypes.string.isRequired,
-    addContact: PropTypes.func.isRequired,
-    changeFilter: PropTypes.func.isRequired,
-    deleteContact: PropTypes.func.isRequired,
-  };
-
   state = {
     contacts: [
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -65,7 +50,6 @@ export class App extends Component {
   deleteContact = id => {
     const { contacts } = this.state;
     const updatedContacts = contacts.filter(e => e.id !== id);
-    console.log(updatedContacts);
     this.setState({ contacts: updatedContacts });
   };
 
