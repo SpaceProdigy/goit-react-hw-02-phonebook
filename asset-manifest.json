@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/SpaceProdigy/goit-react-hw-02-phonebook/static/css/main.c03104d2.css",
-    "main.js": "/SpaceProdigy/goit-react-hw-02-phonebook/static/js/main.4933204e.js",
+    "main.js": "/SpaceProdigy/goit-react-hw-02-phonebook/static/js/main.f42cd5be.js",
     "index.html": "/SpaceProdigy/goit-react-hw-02-phonebook/index.html",
     "main.c03104d2.css.map": "/SpaceProdigy/goit-react-hw-02-phonebook/static/css/main.c03104d2.css.map",
-    "main.4933204e.js.map": "/SpaceProdigy/goit-react-hw-02-phonebook/static/js/main.4933204e.js.map"
+    "main.f42cd5be.js.map": "/SpaceProdigy/goit-react-hw-02-phonebook/static/js/main.f42cd5be.js.map"
   },
   "entrypoints": [
     "static/css/main.c03104d2.css",
-    "static/js/main.4933204e.js"
+    "static/js/main.f42cd5be.js"
   ]
 }
