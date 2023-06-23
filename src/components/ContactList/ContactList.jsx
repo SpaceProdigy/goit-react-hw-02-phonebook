@@ -3,7 +3,7 @@ import { AiOutlineDelete } from 'react-icons/ai';
 import PropTypes from 'prop-types';
 
 import React from 'react';
-import css from '../Contacts.module.css';
+import css from './ContactList.module.css';
 
 export const ContactList = ({ arr, deleteContact }) => {
   return (

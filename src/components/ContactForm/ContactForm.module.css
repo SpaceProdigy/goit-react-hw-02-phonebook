@@ -1,0 +1,46 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.label:last-child {
+    align-items: center
+}
+
+.label:not(:first-child) {
+    margin-top: 40px;
+}
+
+.input {
+    margin-top: 8px;
+    width: 150px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input:focus {
+    outline-color: rgb(97, 97, 229);
+}
+
+.submit {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    background: rgb(30, 30, 30);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: rgba(0, 255, 21, 0.979);
+    color: black
+}
