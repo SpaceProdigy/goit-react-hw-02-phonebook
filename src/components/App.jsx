@@ -14,24 +14,25 @@ export class App extends Component {
     filter: '',
   };
 
-  addContact = data => {
+  addContact = ({ name, number }) => {
     const { contacts } = this.state;
-    const existing = contacts.filter(
-      e => e.name.trim().toLowerCase() === data.name.trim().toLowerCase()
+    const existing = contacts.find(
+      e => e.name.trim().toLowerCase() === name.trim().toLowerCase()
     );
 
-    if (existing.length > 0) {
-      return alert(`${data.name} is already in contacts`);
+    if (existing) {
+      return alert(`${name} is already in contacts`);
     }
 
     const contact = {
       id: nanoid(10),
-      ...data,
+      name,
+      number,
     };
 
-    this.setState({
-      contacts: [...contacts, contact],
-    });
+    this.setState(prevState => ({
+      contacts: [...prevState.contacts, contact],
+    }));
   };
 
   changeFilter = e => {
